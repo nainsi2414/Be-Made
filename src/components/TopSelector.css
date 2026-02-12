@@ -1,0 +1,97 @@
+/* Container padding and heading alignment */
+.top-selector-container {
+  width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.top-selector-container h2.top {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+  text-align: left;
+}
+
+/* changed: 3 previews per row to match reference */
+.top-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+/* Individual Option Button */
+.top-option {
+  position: relative;
+  background: #f5f4ef;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 16px;
+  min-height: 170px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  outline: none;
+  box-shadow: none;
+}
+
+.top-option:hover {
+  background: #efeee7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(16,24,40,0.06);
+}
+
+.top-option:disabled,
+.top-option:disabled:hover,
+.top-option.disabled,
+.top-option.disabled:hover {
+  background: #f5f4ef;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  box-shadow: none;
+}
+
+.top-option:disabled img,
+.top-option.disabled img {
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+
+.top-option:disabled span,
+.top-option.disabled span {
+  color: #9a9a9a;
+}
+
+/* Image styling inside the button */
+.top-option img {
+  width: 100%;
+  height: 90px;
+  max-width: 140px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* Text label below the image */
+.top-option span {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+  min-height: 18px;
+}
+
+/* SELECTED STATE: keep card shape/background identical, only show checkmark */
+.top-option.selected {
+  /* do not change background, padding, border-radius or layout */
+  background: #f5f4ef;
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}

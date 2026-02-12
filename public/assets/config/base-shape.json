@@ -1,0 +1,196 @@
+{
+  "bases": [
+    {
+      "id": "axis",
+      "label": "Axis",
+      "model": "/assets/images/base-shape/axis/model.glb",
+      "thumbnail": "/assets/images/base-shape/axis/thumbnail.webp",
+      "preview": "/assets/images/base-shape/axis/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/axis/model.glb"
+      },
+      "color1": {
+        "name": "Graphite",
+        "base": "/assets/images/base-shape/axis/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/axis/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/axis/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/axis/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/axis/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Cashmere Metal",
+        "base": "/assets/images/base-shape/axis/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/axis/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/axis/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/axis/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/axis/color2/roughness.webp"
+      }
+    },
+    {
+      "id": "cradle",
+      "label": "Cradle",
+      "model": "/assets/images/base-shape/cradle/model.glb",
+      "small_model": "/assets/images/base-shape/cradle/smallModel.glb",
+      "preview": "/assets/images/base-shape/cradle/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/cradle/model.glb"
+      },
+      "color1": {
+        "name": "Champagne",
+        "base": "/assets/images/base-shape/cradle/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/cradle/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/cradle/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/cradle/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/cradle/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Graphite",
+        "base": "/assets/images/base-shape/cradle/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/cradle/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/cradle/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/cradle/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/cradle/color2/roughness.webp"
+      }
+    },
+    {
+      "id": "curva",
+      "label": "Curva",
+      "model": "/assets/images/base-shape/curva/model.glb",
+      "thumbnail": "/assets/images/base-shape/curva/thumbnail.webp",
+      "preview": "/assets/images/base-shape/curva/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/curva/model.glb"
+      },
+      "color1": {
+        "name": "Champagne",
+        "base": "/assets/images/base-shape/curva/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/curva/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/curva/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/curva/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/curva/color1/roughness.webp"
+      }
+    },
+    {
+      "id": "linea",
+      "label": "Linea",
+      "model": "/assets/images/base-shape/linea/model.glb",
+      "thumbnail": "/assets/images/base-shape/linea/thumbnail.webp",
+      "preview": "/assets/images/base-shape/linea/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/linea/model.glb"
+      },
+      "color1": {
+        "name": "Gold",
+        "base": "/assets/images/base-shape/linea/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/linea/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/linea/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/linea/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Book Black",
+        "base": "/assets/images/base-shape/linea/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/linea/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/linea/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/linea/color2/roughness.webp"
+      }
+    },
+    {
+      "id": "linea-contour",
+      "label": "Linea Contour",
+      "model": "/assets/images/base-shape/linea-contour/model.glb",
+      "preview": "/assets/images/base-shape/linea-contour/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/linea-contour/model.glb"
+      },
+      "color1": {
+        "name": "Gold",
+        "base": "/assets/images/base-shape/linea-contour/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/linea-contour/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea-contour/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/linea-contour/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/linea-contour/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Book Black",
+        "base": "/assets/images/base-shape/linea-contour/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/linea-contour/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea-contour/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/linea-contour/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/linea-contour/color2/roughness.webp"
+      }
+    },
+    {
+      "id": "linea-dome",
+      "label": "Linea Dome",
+      "model": "/assets/images/base-shape/linea-dome/model.glb",
+      "thumbnail": "/assets/images/base-shape/linea-dome/thumbnail.webp",
+      "preview": "/assets/images/base-shape/linea-dome/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/linea-dome/model.glb"
+      },
+      "color1": {
+        "name": "Gold",
+        "base": "/assets/images/base-shape/linea-dome/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/linea-dome/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea-dome/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/linea-dome/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/linea-dome/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Cocoa Iron",
+        "base": "/assets/images/base-shape/linea-dome/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/linea-dome/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/linea-dome/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/linea-dome/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/linea-dome/color2/roughness.webp"
+      }
+    },
+    {
+      "id": "moon",
+      "label": "Moon",
+      "model": "/assets/images/base-shape/moon/model.glb",
+      "thumbnail": "/assets/images/base-shape/moon/thumbnail.webp",
+      "preview": "/assets/images/base-shape/moon/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/moon/model.glb"
+      },
+      "color1": {
+        "name": "Cloth Grey",
+        "base": "/assets/images/base-shape/moon/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/moon/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/moon/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/moon/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/moon/color1/roughness.webp"
+      },
+      "color2": {
+        "name": "Cloth Gold",
+        "base": "/assets/images/base-shape/moon/color2/preview.webp",
+        "base-color": "/assets/images/base-shape/moon/color2/base_color.webp",
+        "metalness": "/assets/images/base-shape/moon/color2/metalness.webp",
+        "normal": "/assets/images/base-shape/moon/color2/normal.webp",
+        "roughness": "/assets/images/base-shape/moon/color2/roughness.webp"
+      }
+    },
+   
+    {
+      "id": "twiste",
+      "label": "Twiste",
+      "model": "/assets/images/base-shape/twiste/model.glb",
+      "thumbnail": "/assets/images/base-shape/twiste/thumbnail.webp",
+      "preview": "/assets/images/base-shape/twiste/preview.webp",
+      "models": {
+        "default": "/assets/images/base-shape/twiste/model.glb"
+      },
+      "color1": {
+        "name": "Brass Teak",
+        "base": "/assets/images/base-shape/twiste/color1/preview.webp",
+        "base-color": "/assets/images/base-shape/twiste/color1/base_color.webp",
+        "metalness": "/assets/images/base-shape/twiste/color1/metalness.webp",
+        "normal": "/assets/images/base-shape/twiste/color1/normal.webp",
+        "roughness": "/assets/images/base-shape/twiste/color1/roughness.webp"
+      }
+    }
+  ]
+}

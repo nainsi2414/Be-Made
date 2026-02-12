@@ -1,0 +1,46 @@
+{
+    "tops":[
+   {
+    "id": "capsule",
+    "name": "Capsule",
+    "modelPath": "/assets/images/top-shape/capsule/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/capsule/model-mdf.glb",
+    "preview": "/assets/images/top-shape/capsule/preview.webp"
+    
+  },
+  {
+    "id": "oblong",
+    "name": "Oblong",
+    "modelPath": "/assets/images/top-shape/oblong/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/oblong/model-mdf.glb",
+    "preview": "/assets/images/top-shape/oblong/preview.webp"
+  },
+  {
+    "id": "oval",
+    "name": "Oval",
+    "modelPath": "/assets/images/top-shape/oval/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/oval/model-mdf.glb",
+    "preview": "/assets/images/top-shape/oval/preview.webp"
+  },
+  {
+    "id": "rectangle",
+    "name": "Rectangle",
+    "modelPath": "/assets/images/top-shape/rectangle/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/rectangle/model-mdf.glb",
+    "preview": "/assets/images/top-shape/rectangle/preview.webp"
+  },
+  {
+    "id": "round",
+    "name": "Round",
+    "modelPath": "/assets/images/top-shape/round/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/round/model-mdf.glb",
+    "preview": "/assets/images/top-shape/round/preview.webp"
+  },
+  {
+    "id": "square",
+    "name": "Square",
+    "modelPath": "/assets/images/top-shape/square/model.glb",
+    "mdfModelPath": "/assets/images/top-shape/square/model-mdf.glb",
+    "preview": "/assets/images/top-shape/square/preview.webp"
+  }]
+  }

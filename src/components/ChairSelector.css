@@ -1,0 +1,95 @@
+/* Container for chair selection section */
+.chair-selector-container {
+  width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+/* Chair section heading */
+.chair-selector-container h2.chair {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+  text-align: left;
+}
+
+.chair-seating-type {
+  margin: -10px 0 16px 0;
+  padding-left: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b4b4b;
+}
+
+/* Grid layout: 3 chairs per row (matching base and top selectors) */
+.chair-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Individual Chair Item Button */
+.chair-item {
+  position: relative;
+  background: #f5f4ef;
+  border: none;
+  border-radius: 20px;
+  padding: 16px;
+  min-height: 170px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.12s ease;
+  outline: none;
+}
+
+.chair-item:hover {
+  background: #efeee7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+}
+
+/* Chair Image */
+.chair-item img {
+  width: 100%;
+  max-width: 140px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  pointer-events: none;
+}
+
+/* Chair Label */
+.chair-item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  text-transform: none;
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+/* Active/Selected State — keep card shape identical, only show checkmark */
+.chair-item.active {
+  background: #f4f4f4;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 0 0 transparent;
+}
+
+
+/* Disabled state */
+.chair-item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+

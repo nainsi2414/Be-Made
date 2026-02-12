@@ -1,0 +1,141 @@
+{
+  "chairs": [
+    {
+      "id": "aria",
+      "name": "Aria",
+      "base": "/assets/images/accessories/aria/preview.webp",
+      "modelPath": "/assets/images/accessories/aria/model.glb",
+      "color1": {
+        "id": "color1",
+        "name": "Olive",
+        "preview": "/assets/images/accessories/aria/color1/preview.webp",
+        "legcolor": "/assets/images/accessories/aria/color1/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/aria/color1/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/aria/color1/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/aria/color1/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/aria/color1/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/aria/color1/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/aria/color1/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/aria/color1/chairTopNormal.webp"
+      },
+      "color2": {
+        "id": "color2",
+        "name": "Tan",
+        "preview": "/assets/images/accessories/aria/color2/preview.webp",
+        "legcolor": "/assets/images/accessories/aria/color2/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/aria/color2/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/aria/color2/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/aria/color2/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/aria/color2/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/aria/color2/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/aria/color2/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/aria/color2/chairTopNormal.webp"
+      },
+      "color3": {
+        "id": "color3",
+        "name": "Cream",
+        "preview": "/assets/images/accessories/aria/color3/preview.webp",
+        "legcolor": "/assets/images/accessories/aria/color3/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/aria/color3/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/aria/color3/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/aria/color3/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/aria/color3/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/aria/color3/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/aria/color3/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/aria/color3/chairTopNormal.webp"
+      }
+    },
+
+    {
+      "id": "siena",
+      "name": "Siena",
+      "base": "/assets/images/accessories/siena/preview.webp",
+      "modelPath": "/assets/images/accessories/siena/model.glb",
+      "color1": {
+        "id": "color1",
+        "name": "Cream",
+        "preview": "/assets/images/accessories/siena/color1/preview.webp",
+        "legcolor": "/assets/images/accessories/siena/color1/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/siena/color1/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/siena/color1/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/siena/color1/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/siena/color1/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/siena/color1/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/siena/color1/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/siena/color1/chairTopNormal.webp"
+      },
+      "color2": {
+        "id": "color2",
+        "name": "Pale Taupe",
+        "preview": "/assets/images/accessories/siena/color2/preview.webp",
+        "legcolor": "/assets/images/accessories/siena/color2/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/siena/color2/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/siena/color2/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/siena/color2/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/siena/color2/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/siena/color2/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/siena/color2/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/siena/color2/chairTopNormal.webp"
+      },
+      "color3": {
+        "id": "color3",
+        "name": "Brown",
+        "preview": "/assets/images/accessories/siena/color3/preview.webp",
+        "legcolor": "/assets/images/accessories/siena/color3/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/siena/color3/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/siena/color3/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/siena/color3/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/siena/color3/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/siena/color3/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/siena/color3/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/siena/color3/chairTopNormal.webp"
+      }
+    },
+
+    {
+      "id": "vela",
+      "name": "Vela",
+      "base": "/assets/images/accessories/vela/preview.webp",
+      "modelPath": "/assets/images/accessories/vela/model.glb",
+      "color1": {
+        "id": "color1",
+        "name": "Ecru",
+        "preview": "/assets/images/accessories/vela/color1/preview.webp",
+        "legcolor": "/assets/images/accessories/vela/color1/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/vela/color1/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/vela/color1/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/vela/color1/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/vela/color1/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/vela/color1/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/vela/color1/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/vela/color1/chairTopNormal.webp"
+      },
+      "color2": {
+        "id": "color2",
+        "name": "Taupe",
+        "preview": "/assets/images/accessories/vela/color2/preview.webp",
+        "legcolor": "/assets/images/accessories/vela/color2/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/vela/color2/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/vela/color2/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/vela/color2/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/vela/color2/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/vela/color2/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/vela/color2/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/vela/color2/chairTopNormal.webp"
+      },
+      "color3": {
+        "id": "color3",
+        "name": "Greige",
+        "preview": "/assets/images/accessories/vela/color3/preview.webp",
+        "legcolor": "/assets/images/accessories/vela/color3/chairLegColor.webp",
+        "legmetalness": "/assets/images/accessories/vela/color3/chairLegMetalness.webp",
+        "legroughness": "/assets/images/accessories/vela/color3/chairLegRoughness.webp",
+        "legnormal": "/assets/images/accessories/vela/color3/chairLegNormal.webp",
+        "seatcolor": "/assets/images/accessories/vela/color3/chairTopColor.webp",
+        "seatmetalness": "/assets/images/accessories/vela/color3/chairTopMetalness.webp",
+        "seatroughness": "/assets/images/accessories/vela/color3/chairTopRoughness.webp",
+        "seatnormal": "/assets/images/accessories/vela/color3/chairTopNormal.webp"
+      }
+    }
+  ]
+}
