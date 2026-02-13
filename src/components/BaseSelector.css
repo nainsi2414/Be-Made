@@ -1,30 +1,33 @@
 /* Container */
 .base-selector {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* changed: 3 cards per row */
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  /* changed: 3 cards per row */
+  gap: 12px;
   /* width: 30vw; */
 }
 
 .base {
-  font-family: 'Inter', sans-serif; /* Use your project's primary font */
+  font-family: 'Inter', sans-serif;
+  /* Use your project's primary font */
   font-size: 24px;
   font-weight: 700;
   color: #111;
   margin-bottom: 24px;
-  padding-left: 10px;
+  padding-left: 5px;
   text-align: left;
 }
 
 .base-selector-container {
   width: 100%;
   /* max-width: 45vw;  */
-  
+
   /* padding: 10px; */
   background: #ffffff;
   position: relative;
-  z-index: 10; /*Ensure it stays above the 3D viewer*/
-  
+  z-index: 10;
+  /*Ensure it stays above the 3D viewer*/
+
 }
 
 .section-anchor {
@@ -36,7 +39,8 @@
   position: relative;
   /* background: #f4f4f4; Light gray background like the site */
   border: none;
-  border-radius: 20px; /* More rounded corners */
+  border-radius: 20px;
+  /* More rounded corners */
   /* padding: 18px; */
   min-height: 170px;
   cursor: pointer;
@@ -47,19 +51,20 @@
 }
 
 .base-item:hover {
-  background: #ebebeb;
+  background: #f0f0f0;
+  opacity: 1;
 }
 
 /* Disabled state for base/top cards */
 .base-item:disabled {
   cursor: not-allowed;
   opacity: 0.45;
-  background: #f4f4f4;
+  background: transparent;
   box-shadow: none;
 }
 
 .base-item:disabled:hover {
-  background: #f4f4f4;
+  background: transparent;
 }
 
 .base-item:disabled img {
@@ -82,28 +87,29 @@
 
 /* Label styling */
 .base-item span {
-  
+
   font-size: 14px;
   font-weight: 500;
   color: #111;
-  text-transform: none; /* Site uses Title Case, not Uppercase */
+  text-transform: none;
+  /* Site uses Title Case, not Uppercase */
   margin-top: 6px;
   min-height: 18px;
 }
 
 /* Color tile styling (base/top/chair colors) */
 .base-item.color-item {
-  background: #f2f2f2;
+  background: transparent;
   border-radius: 20px;
-  padding: 18px 18px 14px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  padding: 14px 12px 10px;
+  box-shadow: none;
   min-height: 170px;
 }
 
 .base-item.color-item img {
   width: 100%;
-  /* max-width: 104px; */
-  height: 104px;
+  max-width: 140px;
+  height: 125px;
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -122,7 +128,7 @@
   height: 44px;
   padding: 0;
   border-radius: 50%;
-  background: #ffffff;
+  background: transparent;
   box-shadow: none;
   border: 1.5px solid #d5d5d5;
   min-height: 44px;
@@ -163,10 +169,10 @@
 /* Active State with Checkmark — do not change card shape or background on active */
 .base-item.active {
   /* keep visual shape identical to default; only show checkmark */
-  background: #f4f4f4;
+  background: transparent;
   border-radius: 20px;
   padding: 18px;
-  box-shadow: 0 0 0 transparent;
+  box-shadow: none;
 }
 
 /* Unified selection icon (same SVG + same placement for all items) */
@@ -175,8 +181,8 @@
 .chair-item.is-selected::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 13px;
+  right: 13px;
   width: 36px;
   height: 36px;
   background: url("/assets/images/selection_icon.svg") center/contain no-repeat;
@@ -192,7 +198,7 @@
 /* Chair Quantity Selector */
 .chair-quantity-container {
   margin-top: 40px;
-  padding: 20px;
+  padding: 0px 0px 10px;
   background-color: #ffffff;
 }
 
@@ -201,7 +207,7 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 1px;
 }
 
 .info-icon {
@@ -221,22 +227,26 @@
 .quantity-selector {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
+  gap: 0;
+  /* No gap between elements if we want them connected, or small gap */
+  padding: 0;
+  background-color: transparent;
   width: fit-content;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .quantity-btn {
-  width: 40px;
-  height: 40px;
-  background: #000000;
+  width: 44px;
+  height: 44px;
+  background: #585858;
+  /* Dark gray from screenshot */
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: 700;
+  border-radius: 0;
+  font-size: 24px;
+  font-weight: 400;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -244,35 +254,29 @@
   transition: background 0.2s ease;
 }
 
-.quantity-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  background: #000000;
-}
-
 .quantity-btn:hover {
-  background: #333333;
+  background: #666;
 }
 
-.quantity-btn:active {
-  background: #000000;
-}
-
-.quantity-btn.minus {
-  font-size: 20px;
-}
-
-.quantity-btn.plus {
-  font-size: 20px;
+.quantity-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
 }
 
 .quantity-value {
-  font-size: 16px;
-  font-weight: 600;
+  width: 60px;
+  height: 44px;
+  background: #fff;
   color: #111;
-  min-width: 35px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
+
 
 /* Build Summary Section */
 .build-summary-container {
@@ -394,6 +398,7 @@
   background: #f4f4f4;
   border-color: #bbb;
 }
+
 /* 
 .slider-btn:active {
   /* background: #e8e8e8; */

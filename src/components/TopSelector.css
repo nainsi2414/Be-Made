@@ -25,7 +25,7 @@
 /* Individual Option Button */
 .top-option {
   position: relative;
-  background: #f5f4ef;
+  background: #f9f9f9;
   border: 1px solid transparent;
   border-radius: 20px;
   padding: 16px;
@@ -41,9 +41,9 @@
 }
 
 .top-option:hover {
-  background: #efeee7;
+  background: #f0f0f0;
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(16,24,40,0.06);
+  /* box-shadow: 0 8px 18px rgba(16,24,40,0.06); */
 }
 
 .top-option:disabled,
@@ -90,7 +90,7 @@
 /* SELECTED STATE: keep card shape/background identical, only show checkmark */
 .top-option.selected {
   /* do not change background, padding, border-radius or layout */
-  background: #f5f4ef;
+  background: #f9f9f9;
   border-color: transparent;
   box-shadow: none;
   transform: none;

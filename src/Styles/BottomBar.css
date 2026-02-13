@@ -63,3 +63,21 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 768px) {
+  #bottom {
+    position: sticky;
+    bottom: 0;
+    height: auto;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    gap: 12px;
+  }
+
+  .bottom-item span:first-child {
+    font-size: 10px;
+  }
+
+  .bottom-item span:last-child {
+    font-size: 12px;
+  }
+}

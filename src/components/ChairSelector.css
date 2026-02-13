@@ -37,7 +37,7 @@
 /* Individual Chair Item Button */
 .chair-item {
   position: relative;
-  background: #f5f4ef;
+  background: #f9f9f9;
   border: none;
   border-radius: 20px;
   padding: 16px;
@@ -52,9 +52,9 @@
 }
 
 .chair-item:hover {
-  background: #efeee7;
+  background: #f0f0f0;
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+  /* box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06); */
 }
 
 /* Chair Image */
@@ -79,7 +79,7 @@
 
 /* Active/Selected State — keep card shape identical, only show checkmark */
 .chair-item.active {
-  background: #f4f4f4;
+  background: #f9f9f9;
   border-radius: 20px;
   padding: 18px;
   box-shadow: 0 0 0 transparent;
@@ -92,4 +92,3 @@
   cursor: not-allowed;
   pointer-events: none;
 }
-

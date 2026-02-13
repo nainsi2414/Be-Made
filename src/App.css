@@ -3,7 +3,8 @@ body,
 #root {
   margin: 0;
   /* padding: 0; */
-  height: 100%;
+  height: 100dvh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -43,4 +44,3 @@ body,
 .read-the-docs {
   color: #888;
 }
-

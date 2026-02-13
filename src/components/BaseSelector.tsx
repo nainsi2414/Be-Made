@@ -85,7 +85,7 @@ const BaseSelector = observer(() => {
 
   const calculateTablePrice = () => {
     const shape = selectedTop?.name?.toLowerCase() || "";
-    
+
     // Square Pricing
     if (shape.includes("square")) {
       const size = topManager.topSize;
@@ -109,7 +109,7 @@ const BaseSelector = observer(() => {
     if (length <= 2200) return 2880;
     if (length <= 2450) return 3312;
     if (length <= 2850) return 3576;
-    return 3840; 
+    return 3840;
   };
 
   const tablePrice = calculateTablePrice();
@@ -119,7 +119,7 @@ const BaseSelector = observer(() => {
 
   return (
     <div className="base-selector-container">
-      
+
       <h2 className="base section-anchor" id="step-base">Choose Base</h2>
       <div className="base-selector">
         {baseManager.bases.map((base) => (
@@ -141,26 +141,26 @@ const BaseSelector = observer(() => {
           <div className="base-selector">
             {selectedBase.color1 && (
               <div>
-              <button
-                className={`base-item color-item ${baseManager.selectedBaseColorId === "color1" ? "active is-selected" : ""}`}
-                onClick={() => baseManager.selectBaseColor("color1")}
-              >
-                <img src={selectedBase.color1.base} alt={selectedBase.color1.name} />
-                <span>{selectedBase.color1.name}</span>
-              </button>
-              
+                <button
+                  className={`base-item color-item ${baseManager.selectedBaseColorId === "color1" ? "active is-selected" : ""}`}
+                  onClick={() => baseManager.selectBaseColor("color1")}
+                >
+                  <img src={selectedBase.color1.base} alt={selectedBase.color1.name} />
+                  <span>{selectedBase.color1.name}</span>
+                </button>
+
               </div>
             )}
             {selectedBase.color2 && (
               <div>
-              <button
-                className={`base-item color-item ${baseManager.selectedBaseColorId === "color2" ? "active is-selected" : ""}`}
-                onClick={() => baseManager.selectBaseColor("color2")}
-              >
+                <button
+                  className={`base-item color-item ${baseManager.selectedBaseColorId === "color2" ? "active is-selected" : ""}`}
+                  onClick={() => baseManager.selectBaseColor("color2")}
+                >
                   <img src={selectedBase.color2.base} alt={selectedBase.color2.name} />
-                 <span>{selectedBase.color2.name}</span>
+                  <span>{selectedBase.color2.name}</span>
                 </button>
-               
+
               </div>
             )}
           </div>
@@ -196,9 +196,9 @@ const BaseSelector = observer(() => {
                           style={{ position: 'relative' }}
                         >
                           <img src={tc.base} alt={tc.name} />
-<span>{tc.name}</span>
+                          <span>{tc.name}</span>
                         </button>
-                        
+
                       </div>
                     ))}
                   </div>
@@ -230,7 +230,7 @@ const BaseSelector = observer(() => {
             {selectedTop && (
               <div className="dimensions-container">
                 <h2 className="top section-anchor" id="step-dimension" style={{ marginTop: 28 }}>Dimensions</h2>
-                
+
                 <div className="dimension-info">
                   <span className="info-icon">!</span>
                   <span>All table heights are fixed between 730mm to 750mm</span>
@@ -241,10 +241,10 @@ const BaseSelector = observer(() => {
                     <h3 className="dimension-label">Top Diameter</h3>
                     <div className="slider-controls">
                       <button className="slider-btn minus" onClick={() => topManager.setTopDiameter(topManager.topDiameter - 100)}>-</button>
-                      <input 
-                        type="range" 
-                        min="1200" 
-                        max="1580" 
+                      <input
+                        type="range"
+                        min="1200"
+                        max="1580"
                         step="100"
                         value={topManager.topDiameter}
                         onChange={(e) => topManager.setTopDiameter(Number(e.target.value))}
@@ -261,10 +261,10 @@ const BaseSelector = observer(() => {
                     <h3 className="dimension-label">Top Size</h3>
                     <div className="slider-controls">
                       <button className="slider-btn minus" onClick={() => topManager.setTopSize(topManager.topSize - 100)}>-</button>
-                      <input 
-                        type="range" 
-                        min="1200" 
-                        max="1580" 
+                      <input
+                        type="range"
+                        min="1200"
+                        max="1580"
                         step="100"
                         value={topManager.topSize}
                         onChange={(e) => topManager.setTopSize(Number(e.target.value))}
@@ -291,10 +291,10 @@ const BaseSelector = observer(() => {
                         >
                           -
                         </button>
-                        <input 
-                          type="range" 
+                        <input
+                          type="range"
                           min={minTopLength}
-                          max="3180" 
+                          max="3180"
                           step="20"
                           value={topManager.topLength}
                           onChange={(e) => topManager.setTopLength(Number(e.target.value))}
@@ -314,10 +314,10 @@ const BaseSelector = observer(() => {
                       <h3 className="dimension-label">Top Width</h3>
                       <div className="slider-controls">
                         <button className="slider-btn minus" onClick={() => topManager.setTopWidth(topManager.topWidth - 50)}>-</button>
-                        <input 
-                          type="range" 
-                          min="800" 
-                          max="1300" 
+                        <input
+                          type="range"
+                          min="800"
+                          max="1300"
                           step="50"
                           value={topManager.topWidth}
                           onChange={(e) => topManager.setTopWidth(Number(e.target.value))}
@@ -391,15 +391,15 @@ const BaseSelector = observer(() => {
                     <span className="info-icon" title="Quantity increases or decreases by 2">!</span>
                   </h2>
                   <div className="quantity-selector">
-                    <button 
+                    <button
                       className="quantity-btn minus"
                       disabled={chairManager.chairQuantity <= chairManager.chairLimits.min}
                       onClick={() => chairManager.decrementChairQuantity()}
                     >
-                    -
+                      -
                     </button>
                     <span className="quantity-value">{chairManager.chairQuantity}</span>
-                    <button 
+                    <button
                       className="quantity-btn plus"
                       disabled={chairManager.chairQuantity >= chairManager.chairLimits.max}
                       onClick={() => chairManager.incrementChairQuantity()}
@@ -409,9 +409,20 @@ const BaseSelector = observer(() => {
                   </div>
                 </div>
 
+                <div className="bemade-branding" style={{ marginTop: '20px', paddingBottom: '1px' }}>
+                  <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '8px', color: '#111' }}>
+                    BeMade<span style={{ fontSize: '12px', verticalAlign: 'super' }}>TM</span>
+                  </h2>
+                  <div style={{ display: 'flex', gap: '8px', fontSize: '12px', color: '#666', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                    <span>YOUR DESIGN</span>
+                    <span style={{ color: '#ccc' }}>|</span>
+                    <span>OUR PERFECTION</span>
+                  </div>
+                </div>
+
                 <div className="build-summary-container section-anchor" id="step-summary">
                   <h2 className="summary-title">YOUR BUILD</h2>
-                  
+
                   <div className="summary-row">
                     <span className="summary-label">Table Top</span>
                     <span className="summary-value">{selectedTop?.name || "N/A"}</span>
@@ -430,11 +441,11 @@ const BaseSelector = observer(() => {
                   <div className="summary-row">
                     <span className="summary-label">Dimensions</span>
                     <span className="summary-value">
-                      {selectedTop?.name?.toLowerCase().includes('round') 
+                      {selectedTop?.name?.toLowerCase().includes('round')
                         ? `Diameter: ${topManager.topDiameter}mm`
                         : selectedTop?.name?.toLowerCase().includes('square')
-                        ? `Size: ${topManager.topSize}mm`
-                        : `${topManager.topLength} x ${topManager.topWidth}mm`
+                          ? `Size: ${topManager.topSize}mm`
+                          : `${topManager.topLength} x ${topManager.topWidth}mm`
                       }
                     </span>
                   </div>
@@ -527,7 +538,7 @@ const BaseSelector = observer(() => {
                     fontSize: '1rem',
                     letterSpacing: '1px'
                   }}
-                  onClick={handlePlaceOrder}
+                    onClick={handlePlaceOrder}
                   >
                     PLACE ORDER
                   </button>
@@ -535,6 +546,9 @@ const BaseSelector = observer(() => {
               </>
             )}
           </div>
+
+
+
         </>
       )}
     </div>

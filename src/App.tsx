@@ -2,7 +2,7 @@
 // import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Box } from '@mui/material';
-import {NavBar} from './components/Viewer/NavBar'
+import { NavBar } from './components/Viewer/NavBar'
 import BaseSelector from "./components/BaseSelector"
 import { BottomBar } from './components/Viewer/BottomBar';
 import './App.css'
@@ -24,45 +24,62 @@ function App() {
           element={
             <Box sx={{
               bgcolor: 'white',
-              height: '100vh',
+              height: '100dvh',
+              minHeight: '100vh',
               display: 'flex',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              paddingBottom: 'env(safe-area-inset-bottom)'
             }}>
-              <Box sx={{ height: `${NAV_HEIGHT}px`, flexShrink: 0 }}>
+              <Box sx={{ height: { xs: 'auto', md: `${NAV_HEIGHT}px` }, flexShrink: 0 }}>
                 <NavBar />
               </Box>
 
               <Box sx={{
                 display: 'flex',
                 flex: 1,
-                overflow: 'hidden', // Prevents the whole page from scrolling
-                padding: '10px',
+                overflow: { xs: 'auto', md: 'hidden' }, // allow mobile scrolling inside
+                minHeight: 0,
+                padding: { xs: '8px', md: '10px' },
+                flexDirection: { xs: 'column', md: 'row' },
+                gap: { xs: '8px', md: 0 }
               }}>
 
                 {/* Left Side: 3D Viewer Area */}
-                <Box sx={{ flex: 1, position: 'relative', bgcolor: 'transparent', margin: '10px', borderRadius: '12px', overflow: 'hidden' }}>
+                <Box sx={{
+                  flex: { xs: '0 0 auto', md: 1 },
+                  position: 'relative',
+                  bgcolor: 'transparent',
+                  margin: { xs: '0', md: '10px' },
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  minHeight: { xs: 'auto', md: 'auto' },
+                  height: { xs: '55dvh', md: 'auto' } // Use dvh for mobile
+                }}>
                   <Viewer3D />
                 </Box>
                 <Box
                   id="configurator-scroll"
                   className="configurator-scroll"
                   sx={{
-                  // width: '400px', // Standard width for configurator sidebars
-                  height: '100%',
-                  // borderLeft: '1px solid #eee',
-                  overflowY: 'auto',
-                  backgroundColor: '#f9f9f9',
-                  margin: '5px',
-                  // padding: '5px',
-                  // p: 2
-                }}>
+                    // width: '400px', // Standard width for configurator sidebars
+                    height: { xs: 'auto', md: '100%' },
+                    flex: { xs: '1 1 auto', md: '0 0 auto' }, // Allow growing to fill rest
+                    minHeight: 0,
+                    // borderLeft: '1px solid #eee',
+                    overflowY: 'auto',
+
+                    backgroundColor: '#f9f9f9',
+                    margin: { xs: '0', md: '5px' },
+                    // padding: '5px',
+                    // p: 2
+                  }}>
                   <BaseSelector />
                 </Box>
 
               </Box>
 
 
-              <Box sx={{ height: `${BOTTOM_HEIGHT}px`, flexShrink: 0 }}>
+              <Box sx={{ height: { xs: 'auto', md: `${BOTTOM_HEIGHT}px` }, flexShrink: 0 }}>
                 <BottomBar />
               </Box>
             </Box>
